@@ -1,0 +1,12 @@
+[flake8]
+# match black formatter
+max-line-length = 88
+
+comma_separated_list = True
+ignore =
+    # over-indent multi-line strings to make them easier to read
+    E131
+    # black inserts a line break before binary operators
+    W503
+    # black adds whitespace before colons ':' (in some situations)
+    E203
